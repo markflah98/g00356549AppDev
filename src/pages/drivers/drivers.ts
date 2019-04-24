@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
+import { Drivers_2Page } from './../drivers-2/drivers-2';
 /**
  * Generated class for the DriversPage page.
  *
@@ -17,12 +18,9 @@ import { Observable } from 'rxjs/Observable';
 })
 export class DriversPage {
 
-  constructor(public http: Http) {
-    console.log('Hello DriversPage Provider');
-  }
+    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    }
+    ionViewDidLoad() {
+      console.log('ionViewDidLoad DriverssPage');
 
-  getDrivers(): Observable<any>{
-    return this.http.get("http://ergast.com/api/f1/2019/drivers");
-  }
-
-}
+}}

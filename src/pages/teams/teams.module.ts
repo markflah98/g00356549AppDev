@@ -11,26 +11,4 @@ import { TeamsPage } from './teams';
     IonicPageModule.forChild(TeamsPage),
   ],
 })
-export class TeamsPageModule {
-
-/*--module.controller('ThisCtrl', function($cordovaInAppBrowser) {
-
-  var options = {
-      location: 'yes',
-      clearcache: 'yes',
-      toolbar: 'no'
-    };
-
-  document.addEventListener("deviceready", function () {
-    $cordovaInAppBrowser.open('https://en.wikipedia.org/wiki/Scuderia_Ferrari', '_blank', options)
-      .then(function(event) {
-        // success
-      })
-      .catch(function(event) {
-        // error
-      });
-
-
-    $cordovaInAppBrowser.close();--*/
-
-  }; 
+export class TeamsPageModule {}; 
