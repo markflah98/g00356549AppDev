@@ -11,6 +11,7 @@ import { TeamsPage } from '../pages/teams/teams';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { StandingsPage } from '../pages/standings/standings';
 import { TracksPage } from '../pages/tracks/tracks';
+import { MovieProvider } from '../providers/movies/movies';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { TracksPage } from '../pages/tracks/tracks';
   ],
   imports: [
     BrowserModule,
+   // HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -41,7 +43,10 @@ import { TracksPage } from '../pages/tracks/tracks';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MovieProvider,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MovieProvider
   ]
 })
 export class AppModule {}

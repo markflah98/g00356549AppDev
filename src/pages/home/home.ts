@@ -4,7 +4,7 @@ import { DriversPage } from './../drivers/drivers';
 import { SchedulePage } from './../schedule/schedule';
 import { StandingsPage } from './../standings/standings';
 import { TeamsPage } from './../teams/teams';
-import {TracksPage } from './../tracks/tracks';
+import { TracksPage } from './../tracks/tracks';
 
 
 @Component({

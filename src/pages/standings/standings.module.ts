@@ -11,3 +11,4 @@ import { StandingsPage } from './standings';
   ],
 })
 export class StandingsPageModule {}
+ 

@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
+/*import {StandingsProvider} from ../..*/
 /**
  * Generated class for the StandingsPage page.
  *
@@ -16,13 +17,12 @@ import { Observable } from 'rxjs/Observable';
   templateUrl: 'standings.html',
 })
 export class StandingsPage {
-
-  constructor(public http: Http) {
-    console.log("Hello StandingsPage Provider")
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  getStandings(): Observable<any>{
-    return this.http.get("http://ergast.com/api/f1/2019/driverStandings");
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad StandingsPage');
   }
 
+ 
 }
